@@ -38,7 +38,10 @@ module.exports.handler = async (event) => {
             console.log(data);
         };
     });
-
+    return {
+        statusCode: 200,
+        body: JSON.stringify("success")
+    }
 };
 
 
